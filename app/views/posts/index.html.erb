@@ -12,7 +12,7 @@
     <% @posts.each do |post| %>
       <tr>
       <%= post.user.email %><br>
-        <%= image_tag post.image.url %><br>
+        <%= image_tag post.image.url, style: "width:200px;height:200px;" %><br>
         <p ><%= post.desciption %></p><br>
         
         

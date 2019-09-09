@@ -13,12 +13,10 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
   <nav class="navbar navbar-expand-sm bg-secondary navbar-dark">
   <!-- Brand/logo -->
   <a class="navbar-brand" href="#"><p style = "font-family:forte; font-size:40px;">Instagram</p></a>
-  
   <!-- Links -->
   
   <ul class="nav navbar-nav ml-auto">
@@ -54,7 +52,7 @@
   <% else %>
   <% if current_user.profile.image? %>         
   
-    <p><%= image_tag current_user.profile.image.url, class:"rounded-circle" %></p>
+    <p><%= image_tag current_user.profile.image.url, class:"image" %></p>
       
     <%= link_to 'Edit Profile picture', edit_profile_path(current_user), class: "btn btn-success " %>
    <% end %> 
